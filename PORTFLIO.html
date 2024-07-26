@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body id="background-image">
+    <header id="header">
+        <div class="header-content">
+            <img src="wassupB.png" alt="Profile Picture" class="profile-photo">
+            <h1 id="header-title">PORTFOLIO</h1>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <br><br><br><br><br><br><br><br><br><br>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my portfolio. Here you can find information about me, my projects, and how to contact me.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello! My name is Rihaan Sajith. I am currently in my third year of engineering studies, specializing in Electronics and Communication Engineering (ECE) at Sri Krishna College of Engineering and Technology. My passion for electronics and communication began early, influenced by my vibrant hometown of Kochi, Kerala, which has inspired me throughout my academic journey. Throughout my studies, I have actively engaged in various projects that challenge me and enhance my skills. One notable project is a multi-biometric home locking system that integrates fingerprint and facial recognition technologies to provide enhanced security and convenience. This project has been a significant learning experience, allowing me to apply my theoretical knowledge to practical, real-world applications. My academic pursuits are complemented by a keen interest in staying updated with the latest advancements in technology. I am dedicated to continuous learning and strive to contribute meaningfully to the field of electronics and communication. My goal is to develop innovative solutions that address real-world problems and to grow both personally and professionally in this dynamic field. Thank you for visiting my portfolio. I am open to connecting with like-minded individuals and exploring opportunities that align with my interests and aspirations.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Throughout my academic career, I have had the opportunity to work on several intriguing projects that showcase my skills and interests in electronics and communication. Here are some of the highlights:</p>
+            <p><strong>Multi-Biometric Home Locking System:</strong> This project involved the development of a security system that utilizes both fingerprint and facial recognition technologies. The system aims to enhance home security by providing a robust authentication mechanism. I designed and implemented the hardware and software components, ensuring seamless integration and reliable performance.</p>
+            <p><strong>Smart Home Automation:</strong> Another project focused on creating a smart home automation system using IoT technologies. The system allows users to control various home appliances remotely through a mobile application, improving convenience and energy efficiency.</p>
+            <p><strong>Wireless Communication System:</strong> This project explored the design and implementation of a wireless communication system for data transmission. It involved studying various communication protocols and optimizing the system for better performance and reliability.</p>
+            <p>I am continuously working on new projects and exploring emerging technologies to stay at the forefront of innovation in the field of electronics and communication.</p>
+        </section>
+    </main>
+    <br><br><br><br><br><br><br><br><br>
+    <footer id="footer">
+        <h2>Contacts</h2>
+        <p>Email: <a href="mailto:rihaansajith7070@gmail.com">rihaansajith7070@gmail.com</a></p>
+        <p>Phone: 96xx86xxxx</p>
+    </footer>
+    <script>
+        let isScrolling;
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const headerTitle = document.getElementById('header-title');
+            const footer = document.getElementById('footer');
+            
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                headerTitle.classList.add('hidden');
+            } else {
+                header.classList.remove('scrolled');
+                headerTitle.classList.remove('hidden');
+            }
+
+            if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
+                footer.classList.remove('hidden');
+            } else {
+                footer.classList.add('hidden');
+            }
+
+            
+            window.clearTimeout(isScrolling);
+
+           
+            isScrolling = setTimeout(function() {
+                header.classList.add('fade-out');
+            }, 100);
+        });
+    </script>
+</body>
+</html>

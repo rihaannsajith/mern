@@ -1,0 +1,24 @@
+#bg {
+    margin: 0;
+    padding: 0;
+    background-image: url('1\ \(5\).jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head {
+    text-align: center;
+}
+
+#aq {
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif; 
+}
