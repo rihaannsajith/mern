@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vacuum</title>
+    <link rel="stylesheet" href="mp.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="VAC.png" alt="VAC Player Logo" class="logo">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>Search</li>
+                <li>Your Library</li>
+                <li>Playlists</li>
+                <li>Liked Songs</li>
+            </ul>
+        </nav>
+        <div class="main">
+            <header class="header">
+                <input type="text" placeholder="Search...">
+            </header>
+            <div class="content">
+                <h2>Now Playing</h2>
+                <div class="player">
+                    <div class="album-art">
+                        <img src="hbdrip.jpg" alt="Album Art">
+                    </div>
+                    <div class="song-info">
+                        <h3 id="song-title">Habibi Drip</h3>
+                        <p id="song-artist">DABZEE</p>
+                    </div>
+                    <div class="controls">
+                        <button id="prev"><i class="fas fa-backward"></i></button>
+                        <button id="play-pause"><i class="fas fa-play"></i></button>
+                        <button id="next"><i class="fas fa-forward"></i></button>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="time">
+                        <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                    </div>
+                    <audio id="audio" src="Habibi Drip - PagalHits.mp3"></audio>
+                </div>
+                <h2>Playlist</h2>
+                <div class="playlist">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="mpp.js"></script>
+</body>
+</html>
